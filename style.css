@@ -79,5 +79,16 @@ textarea {
 	width: 100%;
 }
 
+#submit-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: Inknut Antiqua, serif;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgb(81, 74, 146);
+}
 
 
