@@ -24,9 +24,6 @@
     
 
 	</header>
-
-
-
 	</header>
 	<main>
 		<form id="evaluation-form">
@@ -38,28 +35,31 @@
 					<input type="text" id="input-lastname" placeholder="Sobrenome">
 				</label>
 			</div>
-			<div class="input-container">
-				<label for="input-email">
-					<input type="email" id="input-email" placeholder="Email">
-				</label>
-				<label for="house" id="label">Casa
+			<br>
+
+			<div class="input-container">	
+				<input type="email" id="input-email" placeholder="Email">
+				<div class="classe-4">
 					<select id="house">
-						<option selected disabled value="">Selecione </option>
 						<option value="Gitnória" id="gitnoria-house">Gitnória</option>
 						<option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
 						<option value="Corvinode" id="corvinode-house">Corvinode</option>
 						<option value="Pytherina" id="pytherina-house">Pytherina</option>
 					</select>
-				</label>
 			</div>
+			</div>
+
 			<hr>
+
 			<div class="div-2">
 				<label id="label-family">Qual sua família?</label><br><br>	
 				<input type="radio" name="family" value="Frontend">Frontend<br>	
 				<input type="radio" name="family" value="Backend">Backend<br>	
 				<input type="radio" name="family" value="FullStack">Fullstack
 			</div>
+
 			<br>	
+
 			<div class="checkbox-container">
 				<label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
 				<div class="checkbox">
@@ -71,7 +71,9 @@
 				  <label><input type="checkbox" value="Python" class="subject">Python</label>
 				</div>
 			</div>
+
 			<hr>
+
 			<div class="rate-container">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <div class="rate">
@@ -87,25 +89,22 @@
           <label> <input type="radio" name="rate" value="10">10</label>
         </div>
       </div>
-			<br>
-			<label for="" class="textarea">Deixe seu comentário:<br>
-				<textarea name="" id="" cols="30" rows="10" class="textarea" maxlength="500"></textarea>
-			</label>
 
+			<br>
+			
+			<div class="class-3">
+				<label for="" class="textarea">Deixe seu comentário:<br>
+					<textarea name="" id="textarea" cols="30" rows="10" class="textarea" maxlength="500"></textarea>
+					<p id="counter">500</p>
+				</label>
+			</div>
 
 			<label id="label-infos">Você concorda com o uso das informações acima?
 				<input type="checkbox" id="agreement" value="on" selectd>
 			</label>	
 
 			<button type="submit" id="submit-btn" disabled="true">Enviar</button>
-			
-
-
-
-
-
-
-			
+				
 		</form>
 		<div>
 			<img src="images/trybewarts-colored.svg" alt="trybewarts" id="trybewarts-forms-logo">
