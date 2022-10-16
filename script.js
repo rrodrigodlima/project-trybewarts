@@ -1,14 +1,17 @@
 const btnEnviar = document.getElementById('submit-btn');
 const chkBox = document.getElementById('agreement');
-const inputEmailValue = document.getElementById('input-email').value;
-const inputPassword = document.getElementById('input-password').value;
+const inputEmailValue = document.getElementById('input-email');
+const inputPassword = document.getElementById('input-password');
+const textareaGet = document.getElementsByTagName('textarea')[0];
 
 function login() {
   document.getElementById('login-btn').addEventListener('click', () => {
-    if (inputEmailValue === 'tryber@teste.com' && inputPassword === '123456') {
+    if (inputEmailValue.value === 'tryber@teste.com' && inputPassword.value === '123456') {
       alert('Olá, Tryber!');
+      console.log(inputEmailValue);
     } else {
       alert('Email ou senha inválidos.');
+      console.log(inputEmailValue);
     }
   });
 }
@@ -30,7 +33,7 @@ function cont() {
   const tagP = document.createElement('p');
   tagP.innerText = (500 - document.getElementsByTagName('textarea')[0].value.length);
   tagP.id = 'counter';
-  if (document.getElementsByTagName('textarea')[0].value.length > 0) {
+  if (textareaGet.value.length > 0 || textareaGet.value.length === 0) {
     tagP.style.color = 'black';
     document.getElementsByClassName('class-3')[0].appendChild(tagP);
   }
