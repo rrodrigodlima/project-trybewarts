@@ -64,10 +64,6 @@ body {
 .input-container {
   display: flex;
   flex-flow: row wrap;
-	/* align-items: center; */
-  /* gap: 5px;
-  width: 100%;
-  margin-bottom: 10px; */
 }
 
 .check-container {
@@ -89,7 +85,7 @@ body {
 
 .rate {
   margin-left: 5px;
-	text-align: center;
+  text-align: center;
 }
 
 #textarea {
@@ -97,7 +93,7 @@ body {
 }
 
 #submit-btn {
-	font-size: 25px;
+  font-size: 25px;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -107,7 +103,7 @@ body {
   transition: 0.5s;
   cursor: pointer;
   background-color: rgb(81, 74, 146);
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .class-3 p {
@@ -116,7 +112,7 @@ body {
   margin-left: 640px;
 }
 
-#input-name , #input-lastname , #input-email, #input-password, #house{
+#input-name , #input-lastname , #input-email, #input-password, #house {
   font-family: Inknut Antiqua, serif;
   font-size: 12px;
   height: 30px;
@@ -142,15 +138,15 @@ body {
 }
 
 footer {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	background-color: gray;
-	height: 50px;
-	color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: gray;
+  height: 50px;
+  color: white;
 }
 
 h1 {
   margin-left: auto;
-	margin-right: auto;
+  margin-right: auto;
 }
