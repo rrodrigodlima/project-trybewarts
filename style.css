@@ -29,6 +29,7 @@
 
 main {
   display: flex;
+	flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 100%;
@@ -102,7 +103,7 @@ body {
   color: white;
   transition: 0.5s;
   cursor: pointer;
-  background-color: rgb(81, 74, 146);
+  background-color: gray;
   margin-top: 20px;
 }
 
@@ -112,7 +113,7 @@ body {
   margin-left: 640px;
 }
 
-#input-name , #input-lastname , #input-email , #input-password , #house {
+#input-name , #input-lastname , #input-email , #input-password , #house, #input-email2 {
   font-family: Inknut Antiqua, serif;
   font-size: 12px;
   height: 30px;
@@ -139,6 +140,7 @@ body {
 
 footer {
   display: flex;
+	margin-top: 0;
   justify-content: center;
   align-content: center;
   background-color: gray;
