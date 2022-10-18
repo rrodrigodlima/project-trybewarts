@@ -91,23 +91,31 @@ function nextPage() {
   pFinal[6].innerText = `Observações: ${listaInfo.textarea}`;
 }
 
+function checkedRadio(savedInput) {
+  if (savedInput[numLista].checked === true) {
+    // listaInfo.push(savedInput[numLista].value)
+    listaInfo[savedInput[numLista].name] = savedInput[numLista].value;
+  }
+}
+
+function checkedCheckbox(savedInput) {
+  if (savedInput[numLista].checked === true) {
+    lista.push(` ${savedInput[numLista].value}`);
+    listaInfo[savedInput[numLista].name] = lista;
+  }
+}
+
 function saveInfo() {
   let index = 0;
-  for (index = 0; index < (document.getElementsByClassName('saved-input-1').length - 1); index += 1) {
+  const savedInput = document.getElementsByClassName('saved-input-1');
+  for (index = 0; index < (savedInput.length - 1); index += 1) {
     numLista = index;
-    if (document.getElementsByClassName('saved-input-1')[numLista].type === 'radio') {
-      if (document.getElementsByClassName('saved-input-1')[numLista].checked === true) {
-        // listaInfo.push(document.getElementsByClassName('saved-input-1')[numLista].value)
-        listaInfo[document.getElementsByClassName('saved-input-1')[numLista].name] = document.getElementsByClassName('saved-input-1')[numLista].value;
-      }
-    } else if (document.getElementsByClassName('saved-input-1')[numLista].type === 'checkbox') {
-      if (document.getElementsByClassName('saved-input-1')[numLista].checked === true) {
-        lista.push(` ${document.getElementsByClassName('saved-input-1')[numLista].value}`);
-        listaInfo[document.getElementsByClassName('saved-input-1')[numLista].name] = lista;
-        console.log(lista);
-      }
+    if (savedInput[numLista].type === 'radio') {
+      checkedRadio(savedInput);
+    } else if (savedInput[numLista].type === 'checkbox') {
+      checkedCheckbox(savedInput);
     } else {
-      listaInfo[document.getElementsByClassName('saved-input-1')[numLista].name] = document.getElementsByClassName('saved-input-1')[numLista].value;
+      listaInfo[savedInput[numLista].name] = savedInput[numLista].value;
     }
   }
 }
