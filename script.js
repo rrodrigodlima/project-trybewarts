@@ -56,8 +56,8 @@ function cont() {
   //   document.getElementsByClassName('class-3')[0].appendChild(tagP);
   // } else {
   //   tagP.style.color = 'red';
-  //   document.getElementsByClassName('class-3')[0].appendChild(tagP);
-  // }
+  ///   document.getElementsByClassName('class-3')[0].appendChild(tagP);
+  /// }
 }
 
 function deleteMain() {
